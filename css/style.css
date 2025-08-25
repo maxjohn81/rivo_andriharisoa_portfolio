@@ -1,10 +1,21 @@
 body {
-    background: #ffffff;
     font-family: 'Inter', sans-serif;
 }
 
+#ppp{
+    white-space: nowrap;
+}
+
 .responsive {
-    display: none;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(3px);
 }
 
 @media screen and (max-width: 668px) {
@@ -19,14 +30,9 @@ body {
         /* ajuste la vidéo au plein écran */
         z-index: -1
     }
-
-    .default {
-        display: none;
-    }
-
 }
 
-.bouton{
+.bouton {
     display: none;
 }
 
@@ -111,17 +117,17 @@ body {
     margin-top: 70px;
 }
 
-@media screen and (max-width:668px) {
+@media screen and (max-width:868px) {
 
-    .bouton{
+    .bouton {
         display: block;
         width: 40px;
         height: 40px;
-        color: #E67514;
+        color: white;
         position: fixed;
         background: #320a6b;
         border-radius: 50%;
-        border: solid 0.5px #ffffff;
+        /* border: solid 0.5px #ffffff; */
         bottom: 40px;
         right: 20px;
         animation: scale 2s infinite;
@@ -145,10 +151,10 @@ body {
         background: #320a6be0;
         backdrop-filter: blur(20px);
         flex-direction: column;
-        /* transition: 1s; */
+        transition: 1s;
         border-radius: 15px;
         top: 65px;
-        left: 27px;
+        left: 20px;
         width: 300px;
         height: 270px;
         font-size: 5px;
@@ -176,7 +182,6 @@ body {
 
     .addClass {
         display: block;
-
     }
 
     .boxiz {
@@ -187,10 +192,11 @@ body {
 }
 
 @keyframes scale {
-    0%{
+    0% {
         transform: scale(1);
     }
-    50%{
+
+    50% {
         transform: scale(1.1);
     }
 }
@@ -199,6 +205,7 @@ body {
 .me {
     font-style: italic;
     font-size: 45px;
+    color: white;
 }
 
 .lastName {
@@ -220,7 +227,7 @@ body {
 }
 
 .textContent {
-    color: #320A6B;
+    color: #9768d8;
     font-style: oblique;
     font-weight: bold;
     overflow: hidden;
@@ -237,17 +244,22 @@ body {
         /* background: #320A6B; */
         text-align: center;
         width: 800px;
+        color: white;
+
+        #aPropos{
+            color: #9768d8;
+        }
 
         p {
             font-size: 20px;
 
             .moi {
-                color: #F97A00;
+                color: #9768d8;
                 font-weight: bold;
             }
 
             .textImportant {
-                color: #F97A00;
+                color: #9768d8;
                 font-weight: bold;
                 /* background: #320A6B; */
                 border-radius: 10px;
@@ -314,11 +326,11 @@ body {
     color: #f5e8e8;
 
     #competence {
-        color: #351168;
+        color: #9768d8;
     }
 
     h5 {
-        color: #320A6B;
+        color: #9768d8;
         text-align: center;
         font-size: 15px;
     }
@@ -334,7 +346,7 @@ body {
         }
 
         .box {
-            background: linear-gradient(to top, #e67614d3, #320a6bdc);
+            background: linear-gradient(to top, #822cbb83, #320a6b80);
             width: 250px;
             margin: 5px;
             padding: 1%;
@@ -342,6 +354,7 @@ body {
             transition: 1s;
             opacity: 0;
             transform: translateY(50px);
+            border: rgb(182, 182, 182) solid 0.5px;
         }
 
         .addClass2 {
@@ -401,7 +414,11 @@ body {
 
     }
 }
-
+.apprentissage {
+    justify-content: center;
+    color: #9768d8;
+    text-align: center;
+}
 .pp {
     text-align: center;
     font-size: 12px;
@@ -411,7 +428,8 @@ body {
     /* background: #E67514; */
 
     #soft-skills {
-        color: #320A6B;
+        color: #9768d8;
+        margin: 1%;
     }
 
     .Box_skills {
@@ -424,11 +442,13 @@ body {
             margin: 5px;
             padding: 1%;
             border-radius: 10px;
-            background: linear-gradient(to top, #E67514, #320A6B);
+            background: linear-gradient(to top, #882dc477, #320a6b7a);
             text-align: center;
             width: 200px;
             color: aliceblue;
-
+            border: 0.5px solid rgb(173, 173, 173);
+            transform: translateY(50px);
+            opacity: 0;
             transition: 1s;
 
             .icons {
@@ -463,6 +483,10 @@ body {
             opacity: 1;
         }
     }
+}
+
+.pp{
+    color: #9768d8;
 }
 
 @media screen and (max-width:1000px) {
@@ -515,15 +539,17 @@ body {
     }
 
     #parcours {
-        color: #320A6B;
+        color: #9768d8;
+        margin: 2%;
     }
 
     h5 {
         color: #F97A00;
+        margin: 1%;
     }
 
     .etude_superieur {
-        background: #7c4ebb;
+        background: #7b4ebb50;
         width: 350px;
         height: 320px;
         padding: 1%;
@@ -533,6 +559,7 @@ body {
         transform: translateY(50px);
         opacity: 0;
         transition: 1s;
+        border: rgb(145, 145, 145) solid 1px;
 
         h2 {
             color: #ff9436;
@@ -540,7 +567,7 @@ body {
     }
 
     .hackathon {
-        background: #744cad;
+        background: #744cad5e;
         width: 350px;
         height: 320px;
         padding: 1%;
@@ -550,6 +577,7 @@ body {
         transform: translateY(50px);
         opacity: 0;
         transition: 1s;
+        border: rgb(121, 121, 121) solid 1px;
 
         h2 {
             color: #ff9436;
@@ -565,7 +593,7 @@ body {
     }
 
     .marquant {
-        background: #7c4ebb;
+        background: #7b4ebb57;
         width: 350px;
         height: 320px;
         padding: 1%;
@@ -575,6 +603,7 @@ body {
         transform: translateY(50px);
         opacity: 0;
         transition: 1s;
+        border: rgb(156, 156, 156) solid 1px;
 
         h2 {
             color: #ff9436;
@@ -637,11 +666,13 @@ body {
     color: white;
 
     #projet {
-        color: #320A6B;
+        color: #9768d8;
+        margin: 2%;
     }
 
     h4 {
-        color: #320A6B;
+        color: #9768d8;
+        margin: 2%;
     }
 
     .projet_scolaire {
@@ -652,7 +683,7 @@ body {
 
 
         .epidemie {
-            background: linear-gradient(to top, #E67514, #320A6B);
+            background: linear-gradient(to top, #6731ca6e, #320a6b8f);
             width: 300px;
             text-align: center;
             border-radius: 10px;
@@ -660,6 +691,9 @@ body {
             justify-content: space-around;
             flex-wrap: wrap;
             margin: 15px;
+            transform: translateY(50px);
+            opacity: 0;
+            transition: 1s;
 
             .img {
                 /* background: #5d27a8; */
@@ -667,7 +701,7 @@ body {
                 border-radius: 15px;
                 display: flex;
                 width: 250px;
-                gap: 10px;
+                gap: 15px;
                 overflow: hidden;
 
 
@@ -689,13 +723,16 @@ body {
 
 
         .taches {
-            background: linear-gradient(to top, #E67514, #320A6B);
+            background: linear-gradient(to top,  #6731ca6e, #320a6b8f);
             width: 300px;
             text-align: center;
             border-radius: 10px;
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
+            transform: translateY(50px);
+            opacity: 0;
+            transition: 1s;
 
 
             .img {
@@ -704,7 +741,7 @@ body {
                 border-radius: 15px;
                 display: flex;
                 width: 250px;
-                gap: 10px;
+                gap: 15px;
                 overflow: hidden;
 
                 .photo3 {
@@ -720,6 +757,10 @@ body {
                 }
             }
 
+        }
+        .addClass2 {
+            transform: translateY(0);
+            opacity: 1;
         }
     }
 }
@@ -751,27 +792,30 @@ body {
                 backdrop-filter: blur(3px);
                 padding: 15px;
                 border: white solid 1px;
+                transition: 1s;
 
                 h3 {
                     font-size: 25px;
                     color: #ff9436;
                 }
             }
+
+            .epidemie:hover {
+                box-shadow: 4px 4px 4px #5d27a8;
+            }
+
+            .taches:hover {
+                box-shadow: 4px 4px 4px #5d27a8;
+            }
+
+
         }
     }
-
-    footer {
-        font-size: 12px;
-        height: 100px;
-    }
-
 }
 
 footer {
     margin-top: 25px;
-    width: 100%;
-    /* height: 100px; */
-    background: #713eb973;
+    background: #713eb9a1;
     backdrop-filter: blur(3px);
     display: flex;
     justify-content: center;
@@ -779,16 +823,23 @@ footer {
     color: white;
     /* background: linear-gradient(to top, #462279, #320A6B); */
 
+
     .container {
         display: flex;
         justify-content: space-evenly;
         flex-direction: column;
+
+
+        .end_container{
+            font-size: 20px;
+        }
 
         .mail {
             text-decoration: none;
             text-align: center;
             color: #E67514;
             font-weight: bold;
+            font-size: 20px;
         }
 
 
@@ -797,32 +848,58 @@ footer {
             gap: 22px;
 
             .img_social {
-                width: 20px;
-                height: 20px;
+                width: 38px;
+                height: 28px;
                 border-radius: 50%;
-                /* border-radius: 50%; */
-                /* background: red; */
-
             }
 
             .whatsapp {
-                color: green;
+                color: rgb(11, 255, 11);
             }
 
             .facebook {
-                color: blue;
+                color: rgb(90, 90, 247);
             }
 
             .instagram {
-                color: rgb(rgb(148, 90, 224), green, blue);
+                color: rgb(240, 65, 211);
             }
 
             .linkeding {
-                color: blue;
+                color: rgb(64, 144, 235);
             }
 
             .git {
                 color: black;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:668px) {
+    footer{
+        border: 1px solid white;
+        border-radius: 10px 10px 0 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .container{
+
+            .container_social{
+                display: flex;
+                gap: 25px;
+
+
+                .img_social{
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+
+            .mail{
+                font-size: 17px;
             }
         }
     }

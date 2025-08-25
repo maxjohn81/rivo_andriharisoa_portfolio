@@ -111,3 +111,12 @@ observer.observe(textImportant);
 observer.observe(etude_superieur);
 observer.observe(marquant);
 observer.observe(hackathon)
+
+let taches = document.querySelector(".taches")
+let epidemie = document.querySelector(".epidemie")
+setTimeout(()=>{
+  observer.observe(epidemie)
+},50)
+setTimeout(()=>{
+  observer.observe(taches)
+},550)
