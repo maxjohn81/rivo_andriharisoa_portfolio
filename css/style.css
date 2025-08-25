@@ -2,7 +2,7 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-#ppp{
+#ppp {
     white-space: nowrap;
 }
 
@@ -71,6 +71,7 @@ body {
     text-decoration: none;
     color: #E67514;
     font-weight: bold;
+    white-space: nowrap;
 }
 
 #rivo_a {
@@ -78,6 +79,7 @@ body {
     color: #E67514;
     position: relative;
     left: 15px;
+    white-space: nowrap;
 }
 
 .boxiz {
@@ -117,7 +119,7 @@ body {
     margin-top: 70px;
 }
 
-@media screen and (max-width:868px) {
+@media screen and (max-width:668px) {
 
     .bouton {
         display: block;
@@ -191,6 +193,15 @@ body {
     }
 }
 
+@media screen and (max-width:868px) {
+    .nav ul{
+        gap: 10px;
+
+        li{
+            font-size: 13px;
+        }
+    }
+}
 @keyframes scale {
     0% {
         transform: scale(1);
@@ -246,7 +257,7 @@ body {
         width: 800px;
         color: white;
 
-        #aPropos{
+        #aPropos {
             color: #9768d8;
         }
 
@@ -414,11 +425,13 @@ body {
 
     }
 }
+
 .apprentissage {
     justify-content: center;
     color: #9768d8;
     text-align: center;
 }
+
 .pp {
     text-align: center;
     font-size: 12px;
@@ -485,7 +498,7 @@ body {
     }
 }
 
-.pp{
+.pp {
     color: #9768d8;
 }
 
@@ -723,7 +736,7 @@ body {
 
 
         .taches {
-            background: linear-gradient(to top,  #6731ca6e, #320a6b8f);
+            background: linear-gradient(to top, #6731ca6e, #320a6b8f);
             width: 300px;
             text-align: center;
             border-radius: 10px;
@@ -758,6 +771,7 @@ body {
             }
 
         }
+
         .addClass2 {
             transform: translateY(0);
             opacity: 1;
@@ -830,7 +844,7 @@ footer {
         flex-direction: column;
 
 
-        .end_container{
+        .end_container {
             font-size: 20px;
         }
 
@@ -877,7 +891,7 @@ footer {
 }
 
 @media screen and (max-width:668px) {
-    footer{
+    footer {
         border: 1px solid white;
         border-radius: 10px 10px 0 0;
         display: flex;
@@ -885,20 +899,20 @@ footer {
         align-items: center;
 
 
-        .container{
+        .container {
 
-            .container_social{
+            .container_social {
                 display: flex;
                 gap: 25px;
 
 
-                .img_social{
+                .img_social {
                     width: 28px;
                     height: 28px;
                 }
             }
 
-            .mail{
+            .mail {
                 font-size: 17px;
             }
         }
