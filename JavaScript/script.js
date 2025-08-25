@@ -16,8 +16,14 @@ setInterval(() => {
 // Barre de navigation
 let boxiz = document.querySelector(".boxiz");
 let nav = document.querySelector(".nav");
+let barrs = document.querySelectorAll(".barr");
+let barre = document.querySelector(".barre");
 boxiz.addEventListener("click", () => {
   nav.classList.toggle("addClass");
+  barrs.forEach((bar) => {
+    bar.classList.toggle("change");
+  });
+  barre.classList.toggle("change1")
 });
 
 let photo1 = document.querySelector(".photo1");
@@ -77,8 +83,8 @@ window.addEventListener("scroll", () => {
 });
 
 let boxs = document.querySelectorAll(".box");
-let skills = document.querySelectorAll(".skills")
-let textImportant =document.querySelector(".textImportant");
+let skills = document.querySelectorAll(".skills");
+let textImportant = document.querySelector(".textImportant");
 let etude_superieur = document.querySelector(".etude_superieur");
 let hackathon = document.querySelector(".hackathon");
 let marquant = document.querySelector(".marquant");
@@ -98,10 +104,10 @@ const observer = new IntersectionObserver(
 boxs.forEach((box) => {
   observer.observe(box);
 });
-skills.forEach((skill)=>{
+skills.forEach((skill) => {
   observer.observe(skill);
-})
+});
 observer.observe(textImportant);
 observer.observe(etude_superieur);
 observer.observe(marquant);
-observer.observe(hackathon);
+observer.observe(hackathon)

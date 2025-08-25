@@ -1,5 +1,6 @@
 body {
     background: #ffffff;
+    font-family: 'Inter', sans-serif;
 }
 
 .responsive {
@@ -75,10 +76,25 @@ body {
 
 .barr {
     margin-top: 5px;
-    width: 35px;
-    height: 4px;
+    width: 30px;
+    height: 3.5px;
     background-color: #F97A00;
     border-radius: 20px;
+}
+
+.barre {
+    width: 50px;
+    height: 50px;
+    color: #E67514;
+    display: none;
+}
+
+.change {
+    display: none;
+}
+
+.change1 {
+    display: block;
 }
 
 #accueil {
@@ -96,7 +112,8 @@ body {
         height: 450px;
         color: white;
     }
-    .mp{
+
+    .mp {
         color: white;
     }
 
@@ -111,6 +128,7 @@ body {
         /* transition: 1s; */
         border-radius: 15px;
         top: 65px;
+        left: 27px;
         width: 300px;
         height: 270px;
 
@@ -143,7 +161,7 @@ body {
     .boxiz {
         display: block;
         position: relative;
-        right: 15px;
+        right: 10px;
     }
 }
 
@@ -217,6 +235,49 @@ body {
     }
 }
 
+@media screen and (max-width:668px) {
+
+    .mp {
+        /* background: #F97A00; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        #propos_container {
+            /* background: #320A6B; */
+            text-align: center;
+            width: 90%;
+
+            p {
+                font-size: 12px;
+
+                .moi {
+                    color: #9768d8;
+                    font-weight: bold;
+                }
+
+                .textImportant {
+                    color: #9768d8;
+                    font-weight: bold;
+                    /* background: #320A6B; */
+                    border-radius: 10px;
+                    padding: 5px;
+                    transition: 1s;
+                    transform: translateY(50px);
+                    opacity: 0;
+                }
+
+                .addClass2 {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+}
+
 #Competence_container {
     /* background: #320A6B; */
     padding: 1%;
@@ -264,18 +325,23 @@ body {
 
 @media screen and (max-width:668px) {
 
-    .textContent{
+    .textContent {
         color: #9768d8;
         font-style: oblique;
         font-weight: bold;
         overflow: hidden;
+        font-size: 12px;
     }
-    #Competence_container #competence{
+
+    #Competence_container #competence {
         color: #9768d8;
     }
-    #Competence_container h5{
+
+    #Competence_container h5 {
         color: #9768d8;
+        font-size: 12px;
     }
+
     #Competence_container .mes_competences .box {
         width: 500px;
         height: auto;
@@ -285,6 +351,7 @@ body {
         /* background: #7b4ebb5e;F */
         backdrop-filter: blur(3px);
         border: white solid 1px;
+        font-size: 12px;
 
         ol {
             display: flex;
@@ -307,7 +374,7 @@ body {
 
 .pp {
     text-align: center;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .soft_skills {
@@ -373,6 +440,7 @@ body {
     .pp {
         color: #9768d8;
     }
+
     .soft_skills {
 
         #soft-skills {
@@ -493,6 +561,7 @@ body {
 @media screen and (max-width:668px) {
 
     #parcour_container {
+
         #m {
             display: flex;
             justify-content: space-evenly;
@@ -508,6 +577,7 @@ body {
         }
 
         .etude_superieur {
+            font-size: 13px;
             background: #7b4ebb5e;
             backdrop-filter: blur(3px);
             height: 250px;
@@ -515,6 +585,7 @@ body {
         }
 
         .hackathon {
+            font-size: 13px;
             background: #7b4ebb5e;
             backdrop-filter: blur(3px);
             height: 190px;
@@ -522,6 +593,7 @@ body {
         }
 
         .marquant {
+            font-size: 13px;
             background: #7b4ebb5e;
             backdrop-filter: blur(3px);
             height: 200px;
@@ -644,12 +716,23 @@ body {
 
             .epidemie,
             .taches {
+                font-size: 14px;
                 background: rgba(78, 24, 148, 0.39);
                 backdrop-filter: blur(3px);
                 padding: 15px;
                 border: white solid 1px;
+
+                h3 {
+                    font-size: 25px;
+                    color: #ff9436;
+                }
             }
         }
+    }
+
+    footer {
+        font-size: 12px;
+        height: 100px;
     }
 
 }
@@ -684,8 +767,8 @@ footer {
             gap: 22px;
 
             .img_social {
-                width: 25px;
-                height: 25px;
+                width: 20px;
+                height: 20px;
                 border-radius: 50%;
                 /* border-radius: 50%; */
                 /* background: red; */
