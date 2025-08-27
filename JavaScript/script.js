@@ -1,5 +1,6 @@
 let textimportant = document.querySelector(".textContent");
 let texte = "Passionné par l'informatique";
+let texte2 = "Le développement web";
 let liste_textes = [...texte];
 let i = 0;
 
@@ -11,7 +12,7 @@ setInterval(() => {
     textimportant.textContent = "";
     i = 0;
   }
-}, 150);
+}, 250);
 
 // Barre de navigation
 let boxiz = document.querySelector(".boxiz");
@@ -88,6 +89,7 @@ let textImportant = document.querySelector(".textImportant");
 let etude_superieur = document.querySelector(".etude_superieur");
 let hackathon = document.querySelector(".hackathon");
 let marquant = document.querySelector(".marquant");
+let pp = document.querySelector(".pp");
 
 const observer = new IntersectionObserver(
   (entries) => {
@@ -107,6 +109,7 @@ boxs.forEach((box) => {
 skills.forEach((skill) => {
   observer.observe(skill);
 });
+observer.observe(pp);
 observer.observe(textImportant);
 observer.observe(etude_superieur);
 observer.observe(marquant);
