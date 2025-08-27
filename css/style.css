@@ -238,6 +238,13 @@ body {
     width: 200px;
     border-radius: 50%;
     border: solid 2px #320A6B;
+
+    box-shadow: 0 0 40px #865bc2;
+        /* anneau */
+        /* 0 12px 28px rgba(255, 16, 16, 0.699); */
+    /* ombre douce externe */
+
+
 }
 
 .textContent {

@@ -23,7 +23,7 @@ boxiz.addEventListener("click", () => {
   barrs.forEach((bar) => {
     bar.classList.toggle("change");
   });
-  barre.classList.toggle("change1")
+  barre.classList.toggle("change1");
 });
 
 let photo1 = document.querySelector(".photo1");
@@ -110,13 +110,13 @@ skills.forEach((skill) => {
 observer.observe(textImportant);
 observer.observe(etude_superieur);
 observer.observe(marquant);
-observer.observe(hackathon)
+observer.observe(hackathon);
 
-let taches = document.querySelector(".taches")
-let epidemie = document.querySelector(".epidemie")
-setTimeout(()=>{
-  observer.observe(epidemie)
-},50)
-setTimeout(()=>{
-  observer.observe(taches)
-},550)
+let taches = document.querySelector(".taches");
+let epidemie = document.querySelector(".epidemie");
+setTimeout(() => {
+  observer.observe(epidemie);
+}, 50);
+setTimeout(() => {
+  observer.observe(taches);
+}, 550);
