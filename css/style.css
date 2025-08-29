@@ -28,7 +28,7 @@ body {
 @media screen and (max-width: 668px) {
     .mode {
         position: absolute;
-        right: 65px;
+        left: 20px;
         transform: translateY(-3px);
 
         .soleil {
@@ -49,14 +49,14 @@ body {
 .soleil {
     display: block;
     color: white;
-    font-size: 25px;
+    font-size: 17px;
     transition: 1s;
 }
 
 .lune {
     display: none;
     color: black;
-    font-size: 25px;
+    font-size: 17px;
     transition: 1s;
 }
 
