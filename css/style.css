@@ -139,6 +139,7 @@ body {
 .nav {
     position: relative;
     right: 15px;
+    transition: 1s;
 }
 
 .nav ul {
