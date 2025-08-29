@@ -150,3 +150,115 @@ let portfolio = document.querySelector(".portfolio");
 setTimeout(() => {
   observer.observe(portfolio);
 }, 50);
+
+let mode = document.querySelector(".mode");
+let soleil = document.querySelector(".soleil");
+let lune = document.querySelector(".lune");
+let overLay = document.querySelector(".overlay");
+let m = 0;
+mode.addEventListener("click", () => {
+  soleil.classList.toggle("class_soleil");
+  lune.classList.toggle("class_lune");
+  overLay.classList.toggle("class_overlay");
+  m += 1;
+  boxs.forEach((box) => {
+    box.classList.toggle("class_color");
+    if (m % 2 != 0) {
+      box.style.background = "#fffff0";
+    } else {
+      box.style.background = "linear-gradient(to top, #822cbb83, #320a6b80)";
+    }
+  });
+
+  let li = document.querySelectorAll("li");
+  li.forEach((l) => {
+    l.style.background = m % 2 != 0 ? "transparent" : "default";
+  });
+
+  skills.forEach((skill) => {
+    if (m % 2 != 0) {
+      skill.style.background = "#fffff0";
+      skill.style.color = "#000";
+    } else {
+      skill.style.background = "linear-gradient(to top, #882dc477, #320a6b7a)";
+      skill.style.color = "aliceblue";
+    }
+  });
+
+  etude_superieur.style.color = m % 2 != 0 ? "#57564F" : "white";
+  etude_superieur.style.background = m % 2 != 0 ? "white" : "#7b4ebb50";
+  hackathon.style.color = m % 2 != 0 ? "#57564F" : "white";
+  hackathon.style.background = m % 2 != 0 ? "white" : "#7b4ebb50";
+  marquant.style.color = m % 2 != 0 ? "#57564F" : "white";
+  marquant.style.background = m % 2 != 0 ? "white" : "#7b4ebb50";
+
+  epidemie.style.color = m % 2 != 0 ? "#57564F" : "white";
+  epidemie.style.background =
+    m % 2 != 0 ? "white" : "linear-gradient(to top, #6731ca6e, #320a6b8f)";
+  taches.style.color = m % 2 != 0 ? "#57564F" : "white";
+  taches.style.background =
+    m % 2 != 0 ? "white" : "linear-gradient(to top, #6731ca6e, #320a6b8f)";
+  portfolio.style.color = m % 2 != 0 ? "#57564F" : "white";
+  portfolio.style.background =
+    m % 2 != 0 ? "white" : "linear-gradient(to top, #6731ca6e, #320a6b8f)";
+
+  let aPropos = document.getElementById("aPropos");
+  let competences = document.getElementById("competence");
+  let softSkills = document.getElementById("soft-skills");
+  let parcours = document.getElementById("parcours");
+  let projets = document.getElementById("projet");
+
+  aPropos.style.color = m % 2 != 0 ? "#640D5F" : "#9768d8";
+  competences.style.color = m % 2 != 0 ? "#640D5F" : "#9768d8";
+  softSkills.style.color = m % 2 != 0 ? "#640D5F" : "#9768d8";
+  parcours.style.color = m % 2 != 0 ? "#640D5F" : "#9768d8";
+  projets.style.color = m % 2 != 0 ? "#640D5F" : "#9768d8";
+
+  pp.style.color = m % 2 != 0 ? "#57564F" : "#9768d8";
+  pp.style.background = m % 2 != 0 ? "white" : "#a87ee244";
+
+  let ls = document.querySelectorAll(".l");
+  ls.forEach((l) => {
+    l.style.color = m % 2 != 0 ? "#57564F" : "#9768d8";
+  });
+
+  let fs = document.querySelectorAll(".f");
+  fs.forEach((f) => {
+    f.style.color = m % 2 != 0 ? "#57564F" : "white";
+  });
+
+  let moi = document.querySelector(".moi");
+  moi.style.color = m % 2 != 0 ? "#640D5F" : "#9768d8";
+
+  textImportant.style.color = m % 2 != 0 ? "#640D5F" : "#9768d8";
+  textimportant.style.color = m % 2 != 0 ? "#640D5F" : "#9768d8";
+
+  let footer = document.querySelector("footer");
+  footer.style.background = m % 2 != 0 ? "white" : "#713eb9a1";
+  // footer.style.backdropFilter = m % 2 != 0 ? "blur(10px)" : "blur(none)";
+  let endContainer = document.querySelector(".end_container");
+  endContainer.style.color = m % 2 != 0 ? "#57564F" : "white";
+
+  let me = document.querySelector(".me");
+  me.style.color = m % 2 != 0 ? "#640D5F" : "white";
+
+  navBar.style.background = m % 2 != 0 ? "white" : "#320a6b";
+  navBar.style.backdropFilter = m % 2 != 0 ? "blur(20px)" : "blur(20px)";
+  let rivoA = document.getElementById("rivo_a");
+  rivoA.style.color = m % 2 != 0 ? "#57564F" : "#E67514";
+
+  nav.style.background = m % 2 != 0 ? "#fffff0" : "#320a6be0";
+  nav.style.backdropFilter = m % 2 != 0 ? "blur(20px)" : "blur(20px)";
+  let a = document.querySelectorAll("a");
+  a.forEach((link) => {
+    link.style.color = m % 2 != 0 ? "#57564F" : "#E67514";
+  });
+
+  boxiz.style.color = m % 2 != 0 ? "#57564F" : "#E67514";
+  barre.style.color = m % 2 != 0 ? "#57564F" : "#E67514";
+  barrs.forEach((bar) => {
+    bar.style.color = m % 2 != 0 ? "#57564F" : "#E67514";
+  });
+  let nm = document.getElementById("nm");
+  nm.style.background = m % 2 != 0 ? "transparent" : "linear-gradient(to right, #320A6B, #5d27a8)";
+});

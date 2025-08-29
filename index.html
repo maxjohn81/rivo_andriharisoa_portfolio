@@ -20,6 +20,10 @@
                 <li><a class="scroll_link" href="#contact">Contacts</a></li>
             </ul>
         </div>
+        <div class="mode">
+            <ion-icon class="soleil" name="sunny-outline"></ion-icon>
+            <ion-icon class="lune" name="moon-outline"></ion-icon>
+        </div>
         <div class="boxiz">
             <ion-icon class="barre" name="close-outline"></ion-icon>
             <ion-icon class="barr" name="menu-outline"></ion-icon>
@@ -29,13 +33,13 @@
 </header>
 
 <body>
+    <div class="overlay"></div>
     <video autoplay muted loop class="responsive">
         <source src="..//html/videos/responsive.mp4" type="video/mp4">
     </video>
     <div id="accueil">
         <div class="image">
             <img class="photo" src="../html/images/me.jpg" alt="Ma photo">
-
         </div>
         <div class="informations">
             <h2 class="me">Salut, moi c'est <br> <span class="lastName">Rivo Andriharisoa</span></h2>
@@ -45,10 +49,10 @@
     <div class="mp">
         <div id="propos_container">
             <h1 id="aPropos">À propos de moi</h1>
-            <p>Je m'appelle <span class="moi">Rivo Andriharisoa</span>. Étudiant en première année de Licence,
+            <p class="f">Je m'appelle <span class="moi">Rivo Andriharisoa</span>. Étudiant en première année de Licence,
                 je suis motivé et vraiment passionné par l'informatique surtout dans l'univers du développement
                 web</p>
-            <p>Chaque projet est une occasion d'apprendre, d'innover et de me dépasser car <br>
+            <p class="f">Chaque projet est une occasion d'apprendre, d'innover et de me dépasser car <br>
                 <span class="textImportant">"J'apprends, je crée et j'innove à chaque projet"</span>
             </p>
         </div>
@@ -56,10 +60,10 @@
     <div id="Competence_container" onscolle>
         <h1 id="competence">Mes compétences </h1>
         <div>
-            <h5>Découvrez mes compétences techniques acquises au fil de mes projets</h5>
+            <h5 class="l">Découvrez mes compétences techniques acquises au fil de mes projets</h5>
             <div class="mes_competences">
                 <div class="box developpement_web">
-                    <h2>Développement web</h2>
+                    <h2><ion-icon name="desktop-outline"></ion-icon> Développement web</h2>
                     <hr>
                     <ol>
                         <li>HTML</li>
@@ -70,7 +74,7 @@
                     </ol>
                 </div>
                 <div class="box programmation">
-                    <h2>Programmations</h2>
+                    <h2><ion-icon name="code-outline"></ion-icon> Programmations</h2>
                     <hr>
                     <ol>
                         <li>Python</li>
@@ -78,7 +82,7 @@
                     </ol>
                 </div>
                 <div class="box base_de_donne">
-                    <h2>Bases de données</h2>
+                    <h2><ion-icon name="server-outline"></ion-icon> Bases de données</h2>
                     <hr>
                     <ol>
                         <li>MySQL</li>
@@ -87,7 +91,7 @@
                     </ol>
                 </div>
                 <div class="box outilDedeveloppement">
-                    <h2>Outils</h2>
+                    <h2><ion-icon name="wallet-outline"></ion-icon> Outils</h2>
                     <hr>
                     <ol>
                         <li>GitHub</li>
@@ -127,7 +131,7 @@
     </div>
     <div id="parcour_container">
         <h1 id="parcours">Mon parcours</h1>
-        <h5>Découvrez mon parcours scolaire et réalisations en informatique</h5>
+        <h5 class="l">Découvrez mon parcours scolaire et réalisations en informatique</h5>
         <div id="m">
             <div class="etude_superieur">
                 <h2>Études supérieures</h2>
@@ -156,7 +160,7 @@
                 <h2>Hackathon</h2>
                 <hr>
                 <div>
-                    <h6>Hackathon <span class="hack">2024-2025</span></h6>
+                    <h6 id="nm">Hackathon <span class="hack">2024-2025</span></h6>
                     <p>Participation à l' EMIHACK 2024-2025, projet sélectionné <span class="coupDeCoueur">Coup De
                             coeur</span></p>
                 </div>
@@ -174,7 +178,7 @@
     </div>
     <div class="projet_container">
         <h1 id="projet">Mes Projets</h1>
-        <h4>Projets Scolaires</h4>
+        <h4 class="l">Projets Scolaires</h4>
         <div class="projet_scolaire">
             <div class="epidemie">
                 <h3>Gestion de l'epidemie</h3>
