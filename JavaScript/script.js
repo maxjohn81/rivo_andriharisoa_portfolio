@@ -73,6 +73,29 @@ setInterval(() => {
   }
 }, 1500);
 
+let photo5 = document.querySelector(".photo5");
+let photo6 = document.querySelector(".photo6");
+let l = 0;
+
+setInterval(() => {
+  l += 1;
+  if (l == 2) {
+    photo5.style.transform = "translate(-265px)";
+    photo6.style.transform = "translate(-260px)";
+  }
+
+  if (l > 4) {
+    setTimeout(() => {
+      photo5.style.transform = "translate(0)";
+      photo6.style.transform = "translate(-0)";
+    }, 500);
+  }
+
+  if (l > 4) {
+    l = 0;
+  }
+}, 1000);
+
 let navBar = document.querySelector(".navbar");
 
 window.addEventListener("scroll", () => {
@@ -123,3 +146,7 @@ setTimeout(() => {
 setTimeout(() => {
   observer.observe(taches);
 }, 550);
+let portfolio = document.querySelector(".portfolio");
+setTimeout(() => {
+  observer.observe(portfolio);
+}, 50);

@@ -836,6 +836,49 @@ body {
             box-shadow: 0 0 20px #5d27a8;
         }
 
+        .portfolio {
+            background: linear-gradient(to top, #6731ca6e, #320a6b8f);
+            width: 300px;
+            text-align: center;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            transform: translateY(50px);
+            opacity: 0;
+            transition: 1s;
+            border: 0.5px solid rgb(173, 173, 173);
+
+            h3{
+                color: #E67514;
+            }
+
+            .img {
+                /* background: #5d27a8; */
+                padding: 15px;
+                border-radius: 15px;
+                display: flex;
+                width: 250px;
+                gap: 15px;
+                overflow: hidden;
+
+                .photo5 {
+                    width: 250px;
+                    border-radius: 15px;
+                    transition: 1s;
+                }
+
+                .photo6 {
+                    width: 250px;
+                    border-radius: 15px;
+                    transition: 1s;
+                }
+            }
+        }
+        .portfolio:hover {
+            box-shadow: 0 0 20px #5d27a8;
+        }
+
         .addClass2 {
             transform: translateY(0);
             opacity: 1;
@@ -864,7 +907,7 @@ body {
             flex-wrap: wrap;
 
             .epidemie,
-            .taches {
+            .taches, .portfolio {
                 font-size: 14px;
                 background: rgba(78, 24, 148, 0.39);
                 backdrop-filter: blur(3px);
