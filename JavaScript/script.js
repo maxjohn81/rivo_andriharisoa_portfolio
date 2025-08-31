@@ -12,7 +12,7 @@ setInterval(() => {
     textimportant.textContent = "";
     i = 0;
   }
-}, 250);
+}, 250)
 
 // Barre de navigation
 let boxiz = document.querySelector(".boxiz");
@@ -260,5 +260,25 @@ mode.addEventListener("click", () => {
     bar.style.color = m % 2 != 0 ? "#57564F" : "#E67514";
   });
   let nm = document.getElementById("nm");
-  nm.style.background = m % 2 != 0 ? "transparent" : "linear-gradient(to right, #320A6B, #5d27a8)";
+  nm.style.background =
+    m % 2 != 0 ? "transparent" : "linear-gradient(to right, #320A6B, #5d27a8)";
 });
+
+let containerProgress = document.querySelector(".container_progress");
+let progress = document.querySelector(".progress");
+let span = document.querySelector(".span");
+let count = 0;
+
+// body.style.opacity="0"
+
+setInterval(() => {
+  if (count < 100) {
+    count += 1;
+    progress.style.width = count + "%";
+    span.textContent = count + "%";
+  } else {
+    setTimeout(() => {
+      containerProgress.style.display = "none";
+    }, 500);
+  }
+}, 20)
