@@ -96,15 +96,15 @@ setInterval(() => {
   }
 }, 1000);
 
-let navBar = document.querySelector(".navbar");
+// let navBar = document.querySelector(".navbar");
 
-window.addEventListener("scroll", () => {
-  if (scrollY > 50) {
-    navBar.classList.add("addclass1");
-  } else {
-    navBar.classList.remove("addclass1");
-  }
-});
+// window.addEventListener("scroll", () => {
+//   if (scrollY > 50) {
+//     navBar.classList.add("addclass1");
+//   } else {
+//     navBar.classList.remove("addclass1");
+//   }
+// });
 
 let boxs = document.querySelectorAll(".box");
 let skills = document.querySelectorAll(".skills");
