@@ -96,7 +96,7 @@ setInterval(() => {
   }
 }, 1000);
 
-// let navBar = document.querySelector(".navbar");
+let navBar = document.querySelector(".navbar");
 
 // window.addEventListener("scroll", () => {
 //   if (scrollY > 50) {
