@@ -22,7 +22,7 @@ body {
     flex-direction: column;
     z-index: 3;
 
-    .span{
+    .span {
         color: #f5e8e8;
         font-weight: bold;
         font-size: 20px;
@@ -192,6 +192,7 @@ body {
     color: #E67514;
     font-weight: bold;
     white-space: nowrap;
+    font-size: 13px;
 }
 
 #rivo_a {
@@ -292,33 +293,42 @@ body {
         backdrop-filter: blur(20px);
         flex-direction: column;
         transition: 1s;
-        border-radius: 15px;
-        top: 65px;
-        left: 45px;
-        width: 300px;
-        height: 230px;
+        border-radius:0 0 15px 15px;
+        top: 60px;
+        left: 0%;
+        width: 100%;
+        height: auto;
         font-size: 5px;
+        object-fit: cover;
+        border-bottom: solid 1px #949494;
 
 
         ul {
             display: flex;
             flex-direction: column;
-            text-align: center;
-            gap: 20px;
-            /* background: #320A6B; */
+            gap: 5px;
+            height: auto;
+            padding:10px 40px;
+            height: 250px;
+            /* background-color: red; */
 
             li {
                 transform: translate(-20px);
                 font-size: 20px;
-                /* background: red; */
-                /* margin-top: 3px; */
+                width: 100%;
                 padding: 1px;
-                height: 17px;
+                height: 40px;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
                 transition: 1s;
+                padding: 0 10px;
+                border-radius: 7px;
+                border: none;
             }
 
             li:hover {
-                text-decoration: underline;
+                border: rgb(172, 168, 168) 1px solid;
                 color: #E67514;
             }
         }
@@ -374,10 +384,27 @@ body {
     overflow: hidden;
     border-radius: 50%;
     border: solid 2px #320A6B;
-    box-shadow: 0 0 40px #865bc2;
+    /* box-shadow: 0 0 40px #865bc2; */
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: fontes 2s infinite;
+}
+
+@keyframes fontes {
+    0% {
+        box-shadow: 0 0 10px #a77ee0,
+            0 0 20px #6b22d1;
+    }
+
+    50% {
+        box-shadow: 0 0 40px #532396,
+            0 0 70px #865bc2;
+    }
+
+    100% {
+        box-shadow: 0 0 10px #a77ee0;
+    }
 }
 
 .photo {

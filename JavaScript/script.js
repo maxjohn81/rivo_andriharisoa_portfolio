@@ -12,7 +12,7 @@ setInterval(() => {
     textimportant.textContent = "";
     i = 0;
   }
-}, 250)
+}, 250);
 
 // Barre de navigation
 let boxiz = document.querySelector(".boxiz");
@@ -124,7 +124,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.3 }
+  { threshold: 0.7 }
 );
 boxs.forEach((box) => {
   observer.observe(box);
@@ -281,4 +281,4 @@ setInterval(() => {
       containerProgress.style.display = "none";
     }, 500);
   }
-}, 20)
+}, 20);
