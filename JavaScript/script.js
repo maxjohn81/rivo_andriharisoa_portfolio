@@ -267,6 +267,31 @@ mode.addEventListener("click", () => {
   langageMaitriser.forEach((langage) => {
     langage.style.background = m % 2 != 0 ? "#57564F" : "#fff";
   });
+  autres.forEach((autre) => {
+    autre.style.color = m % 2 != 0 ? "#57564F" : "#fff";
+  });
+
+  let totals = document.querySelectorAll(".totals");
+  totals.forEach((total) => {
+    total.style.background = m % 2 != 0 ? "#fff" : "rgba(78, 24, 148, 0.39)";
+  });
+  let iconProjet = document.querySelectorAll(".incons_du_projet");
+  iconProjet.forEach((icon) => {
+    icon.style.background = m % 2 != 0 ? "#ffffff70" : "#320a6bc7";
+  });
+  let icon_trophe = document.querySelectorAll(".icon_trophe");
+  icon_trophe.forEach((icon) => {
+    icon.style.color = m % 2 != 0 ? "#57564F" : "#FFBC4C";
+  });
+
+  let ttls = document.querySelectorAll(".ttls");
+  ttls.forEach((ttl) => {
+    ttl.style.transition = "2s";
+    ttl.style.color = m % 2 != 0 ? "#640D5F" : "#9768d8";
+  });
+
+  let lml = document.getElementById("lml");
+  lml.style.color = m % 2 != 0 ? "#640D5F" : "#491b8a";
 });
 
 let containerProgress = document.querySelector(".container_progress");
@@ -382,3 +407,21 @@ obsvervation1.observe(devWeb);
 obsvervation2.observe(programmation);
 obsvervation3.observe(DB);
 obsvervation4.observe(outilDedeveloppement);
+
+let autres = document.querySelectorAll(".autre_projet_container");
+let obs = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("addcc");
+      } else {
+        entry.target.classList.remove("addcc");
+      }
+    });
+  },
+  { threshold: 0.7 }
+);
+
+autres.forEach((autre) => {
+  obs.observe(autre);
+});

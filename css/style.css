@@ -8,6 +8,28 @@ body {
     /* filter: blur(20px); */
 }
 
+#voirP{
+
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    width: 150px;
+    /* padding: 15px; */
+    align-items: center;
+    box-shadow: #7841c5 0 0 15px;
+
+
+    #lml{
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        color: #491b8a;
+    }
+    
+    
+}
+
 .container_progress {
     width: 100%;
     height: 100vh;
@@ -1303,5 +1325,159 @@ footer {
                 font-size: 17px;
             }
         }
+    }
+}
+
+.img_autre_projet{
+    width: 250px;
+    transition: 0.2s;
+    border-radius: 15px;
+}
+
+.autre_projet_container{
+    /* background: red; */
+    padding: 5px;
+    margin: 15px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 35px;
+    align-items: center;
+    color: #ecebeb;
+    font-size: 15px;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 1s;
+}
+.totals{
+    transition: 2s;
+}
+
+.addcc{
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+.to_do_liste_container{
+    justify-content: flex-end;
+}
+
+.calculatrice_projet{
+    border: 0.5px solid rgb(173, 173, 173);
+    background:  rgba(78, 24, 148, 0.39);
+    width: 500px;
+    /* height: 250px; */
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    /* text-align: center; */
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.to_do_liste_projet{
+    border: 0.5px solid rgb(173, 173, 173);
+    background:  rgba(78, 24, 148, 0.39);
+    width: 500px;
+    /* height: 250px; */
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    /* text-align: center; */
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.quiz_js_projet{
+    border: 0.5px solid rgb(173, 173, 173);
+    background:  rgba(78, 24, 148, 0.39);
+    width: 500px;
+    /* height: 250px; */
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+    /* text-align: center; */
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+.img_div{
+    padding: 2px;
+    /* background: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 2000px;
+    /* height: 150px; */
+    border-radius: 15px;
+    transition: 1s;
+}
+
+.img_div:hover .img_autre_projet{
+    transform: scale(1.1);
+}
+
+.icon_trophe{
+    font-size: 25px;
+    color: #FFBC4C;
+}
+
+.incons_du_projet{
+    background: #320a6bc7;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fontes 5s infinite;
+    transition: 1s;
+}
+
+.autre_projet{
+    margin-top: 25px;
+}
+
+.autre_titre{
+    color: #9768d8;
+    text-align: center;
+}
+
+@media screen and (max-width:668px) {
+    .autre_projet_container{
+        font-size: 12px;
+        flex-direction: column;
+    }
+    .calculatrice_projet{
+        width: 400px;
+        margin-top: 35px;
+    }
+    .to_do_liste_projet{
+        width: 400px;
+        margin-top: 35px;
+    }
+    .quiz_js_projet{
+        width: 400px;
+        margin-top: 35px;
+    }
+
+    .autre_projet{
+        gap: 25px;
+    }
+
+    .ac{
+        position: absolute;
+        transform: translateY(235px);
+    }
+    .ad{
+        position: absolute;
+        transform: translateY(252px);
+    }
+    .ab{
+        position: absolute;
+        transform: translateY(22px);
+        z-index: 1;
     }
 }
