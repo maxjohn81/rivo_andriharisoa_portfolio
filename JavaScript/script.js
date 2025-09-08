@@ -17,6 +17,12 @@ setInterval(() => {
 // Barre de navigation
 let boxiz = document.querySelector(".boxiz");
 let nav = document.querySelector(".nav");
+
+window.addEventListener("scroll", () => {
+  if (scrollY > 5) {
+    nav.style.backdropFilter = "5px";
+  }
+});
 let barrs = document.querySelectorAll(".barr");
 let barre = document.querySelector(".barre");
 boxiz.addEventListener("click", () => {
@@ -98,14 +104,6 @@ setInterval(() => {
 
 let navBar = document.querySelector(".navbar");
 
-// window.addEventListener("scroll", () => {
-//   if (scrollY > 50) {
-//     navBar.classList.add("addclass1");
-//   } else {
-//     navBar.classList.remove("addclass1");
-//   }
-// });
-
 let boxs = document.querySelectorAll(".box");
 let skills = document.querySelectorAll(".skills");
 let textImportant = document.querySelector(".textImportant");
@@ -126,6 +124,8 @@ const observer = new IntersectionObserver(
   },
   { threshold: 0.5 }
 );
+
+observer.observe(competence);
 boxs.forEach((box) => {
   observer.observe(box);
 });
@@ -262,6 +262,11 @@ mode.addEventListener("click", () => {
   let nm = document.getElementById("nm");
   nm.style.background =
     m % 2 != 0 ? "transparent" : "linear-gradient(to right, #320A6B, #5d27a8)";
+
+  let langageMaitriser = document.querySelectorAll(".langage_maitrise");
+  langageMaitriser.forEach((langage) => {
+    langage.style.background = m % 2 != 0 ? "#57564F" : "#fff";
+  });
 });
 
 let containerProgress = document.querySelector(".container_progress");
@@ -282,3 +287,98 @@ setInterval(() => {
     }, 500);
   }
 }, 20);
+
+let devWeb = document.querySelector(".developpement_web");
+let programmation = document.querySelector(".programmation");
+let DB = document.querySelector(".base_de_donne");
+let outilDedeveloppement = document.querySelector(".outilDedeveloppement");
+let html = document.querySelector(".html");
+let css = document.querySelector(".css");
+let boostrap = document.querySelector(".boostrap");
+let tailwind = document.querySelector(".tailwind");
+let javascript = document.querySelector(".javascript");
+let python = document.querySelector(".python");
+let cPlus = document.querySelector(".cPlus");
+let mySql = document.querySelector(".mySql");
+let sqLite = document.querySelector(".sqLite");
+let mAccess = document.querySelector(".mAccess");
+let gitHub = document.querySelector(".gitHub");
+let vsCode = document.querySelector(".vsCode");
+const obsvervation1 = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        if (entry.target == devWeb) {
+          html.style.width = "98%";
+          css.style.width = "98%";
+          boostrap.style.width = "50%";
+          tailwind.style.width = "75%";
+          javascript.style.width = "85%";
+        }
+      } else {
+        html.style.width = "0%";
+        css.style.width = "0%";
+        boostrap.style.width = "0%";
+        tailwind.style.width = "0%";
+        javascript.style.width = "0%";
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
+
+const obsvervation2 = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        if (entry.target == programmation) {
+          python.style.width = "85%";
+          cPlus.style.width = "45%";
+        }
+      } else {
+        python.style.width = "0%";
+        cPlus.style.width = "0%";
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
+
+const obsvervation3 = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        if (entry.target == DB) {
+          mySql.style.width = "55%";
+          sqLite.style.width = "65%";
+          mAccess.style.width = "55%";
+        }
+      } else {
+        mySql.style.width = "0%";
+        sqLite.style.width = "0%";
+        mAccess.style.width = "0%";
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
+const obsvervation4 = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        if (entry.target == outilDedeveloppement) {
+          gitHub.style.width = "70%";
+          vsCode.style.width = "90%";
+        }
+      } else {
+        gitHub.style.width = "0%";
+        vsCode.style.width = "0%";
+      }
+    });
+  },
+  { threshold: 0.5 }
+);
+obsvervation1.observe(devWeb);
+obsvervation2.observe(programmation);
+obsvervation3.observe(DB);
+obsvervation4.observe(outilDedeveloppement);

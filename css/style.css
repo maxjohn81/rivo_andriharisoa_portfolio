@@ -16,7 +16,7 @@ body {
     left: 0;
     position: fixed;
     backdrop-filter: blur(15px);
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -81,6 +81,21 @@ body {
 .mode {
     position: relative;
     right: 20px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    border-radius: 5px;
+}
+
+.mode:hover {
+    background: #4f1c96;
+}
+
+.mode:hover  .lune{
+    color: #fff;
 }
 
 .soleil {
@@ -260,6 +275,9 @@ body {
     .textContent {
         text-align: center;
     }
+    #accueil{
+        margin-bottom: 30px;
+    }
 
     .bouton {
         display: block;
@@ -308,19 +326,13 @@ body {
             display: flex;
             flex-direction: column;
             gap: 5px;
-            height: auto;
             padding: 10px 40px;
             height: 290px;
-            /* background-color: red; */
 
             li {
-                transform: translate(-20px);
-                font-size: 20px;
                 width: 100%;
                 margin: 1px;
                 height: 40px;
-                display: flex; 
-                justify-content: flex-start;
                 align-items: center;
                 transition: 1s;
                 padding: 0 10px;
@@ -329,17 +341,16 @@ body {
 
                 a {
                     width: 100%;
-                    /* padding: 1px; */
                     height: 40px;
                     display: flex;
                     justify-content: flex-start;
                     align-items: center;
+                    font-size: 18px;
                 }
             }
 
             li:hover {
                 border: rgb(172, 168, 168) 1px solid;
-                color: #E67514;
             }
         }
 
@@ -599,7 +610,7 @@ body {
         border: white solid 1px;
         font-size: 12px;
         transition: 1s;
-
+/* 
         ol {
             display: flex;
             flex-wrap: wrap;
@@ -613,11 +624,111 @@ body {
                 border-radius: 20px;
                 text-align: center;
                 transition: 1s;
-                /* box-shadow: 4px 4px 4px rgb(0, 0, 0); */
             }
-        }
+        } */
 
     }
+}
+
+.pourcentage{
+    margin: 5px;
+    width: 100%;
+    height: 4px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    transform: translate(-25px);
+}
+
+.html{
+    width: 0;
+    height: 4px;
+    border-radius: 20px;
+    background: #ffffff;
+    transition: 1s;
+}
+.css{
+    width: 0;
+    height: 4px;
+    border-radius: 20px;
+    background: #fff;
+    transition: 2s;
+}
+.boostrap{
+    width: 0;
+    height: 4px;
+    border-radius: 20px;
+    background: #fff;
+    transition: 3s;
+}
+.tailwind{
+    width: 0;
+    height: 4px;
+    border-radius: 20px;
+    background: #fff;
+    transition: 4s;
+}
+.javascript{
+    width: 0;
+    height: 4px;
+    border-radius: 20px;
+    background: #fff;
+    transition: 5s;
+}
+
+.python{
+    width: 0;
+    height: 4px;
+    border-radius: 20px;
+    background: #fff;
+    transition: 2s;
+}
+
+.cPlus{
+    width: 0;
+    height: 4px;
+    border-radius: 20px;
+    background: #fff;
+    transition: 3s;
+}
+
+.mySql{
+    width: 0;
+    height: 4px;
+    border-radius: 20px;
+    background: #fff;
+    transition: 1s;
+}
+
+.sqLite{
+    width: 0;
+    height: 4px;
+    border-radius: 20px;
+    background: #fff;
+    transition: 2s;
+}
+
+.mAccess{
+    width: 0;
+    height: 4px;
+    border-radius: 20px;
+    background: #fff;
+    transition: 3s;
+}
+
+.gitHub{
+    width: 0;
+    height: 4px;
+    border-radius: 20px;
+    background: #fff;
+    transition: 1s;
+}
+
+.vsCode{
+    width: 0;
+    height: 4px;
+    border-radius: 20px;
+    background: #fff;
+    transition: 2s;
 }
 
 .apprentissage {
