@@ -298,6 +298,8 @@ let containerProgress = document.querySelector(".container_progress");
 let progress = document.querySelector(".progress");
 let span = document.querySelector(".span");
 let count = 0;
+console.log(count);
+
 
 // body.style.opacity="0"
 
